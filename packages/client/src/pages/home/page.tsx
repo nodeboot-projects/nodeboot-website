@@ -14,7 +14,6 @@ export const Page = () => {
 // Inline test
 if (import.meta.vitest) {
   const { render } = await import("@testing-library/react");
-  // @ts-expect-error
   const { describe, expect, it } = import.meta.vitest;
 
   describe("Home Page", () => {

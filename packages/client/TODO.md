@@ -9,3 +9,7 @@
 - [ ] Setup stylelint
 - [x] Typing for environments
 - [ ] Fix todo-tree to pick up current workspace TODO.md
+- [ ] Setup server mocking via msw
+- [ ] Fix some of the FIXME tags
+- [ ] Configure jsdom beforeAll, beforeEach, afterAll, afterEach (clear jsdom)
+      on each render

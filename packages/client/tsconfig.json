@@ -18,7 +18,7 @@
     "useDefineForClassFields": true,
     "types": ["vitest/importMeta"]
   },
-  "include": ["./src", "./types/environment.d.ts"],
+  "include": ["./__tests__/", "./src", "./types/environment.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
