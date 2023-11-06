@@ -13,10 +13,12 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "strictNullChecks": true,
     "target": "ES2020",
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "types": ["vitest/importMeta"]
   },
-  "include": ["src"],
+  "include": ["./src", "./types/environment.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"

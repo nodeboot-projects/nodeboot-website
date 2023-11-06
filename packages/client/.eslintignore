@@ -1,0 +1,15 @@
+!.eslintrc.cjs
+!.prettierrc.cjs
+.eslintignore
+.prettierignore
+README.md
+dist
+index.html
+jsconfig.json
+node_modules
+package.json
+public
+tsconfig.json
+tsconfig.node.json
+yarn-error.log
+yarn.lock

@@ -1,0 +1,14 @@
+# Build
+dist
+
+# ENVIRONMENT
+*.local
+
+# IDE - Only in sub packages
+packages/client/.vscode
+packages/server/.vscode
+packages/shared/.vscode
+packages/tools/.vscode
+
+# NPM
+node_modules

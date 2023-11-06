@@ -1,10 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import "./styles/globals.scss";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+import React from "react";
+import { createRoot } from "react-dom/client";
+
+const rootElement = document.querySelector("root");
+if (rootElement) {
+  createRoot(rootElement).render(
+    <React.StrictMode>
+      <div>hello world</div>
+    </React.StrictMode>
+  );
+} else console.error("root element not found");
