@@ -1,0 +1,43 @@
+{
+  "name": "nodeboot-website",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A website for the Nodeboot",
+  "keywords": [
+    "docs",
+    "nodeboot",
+    "website"
+  ],
+  "homepage": "https://nodeboot.github.io",
+  "bugs": "https://github.com/nodeboot-projects/nodeboot-website/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeboot-projects/nodeboot-website.git"
+  },
+  "license": "MIT",
+  "author": "Matthew Mason <nodeboot.projects@gmail.com>",
+  "contributors": [
+    {
+      "name": "dustin1818",
+      "url": "https://github.com/dustin1818/"
+    }
+  ],
+  "type": "module",
+  "workspaces": {
+    "nohoist": [],
+    "packages": [
+      "./packages/client/",
+      "./packages/server/",
+      "./packages/shared/",
+      "./packages/tools/"
+    ]
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0",
+    "npm": "Please use yarn instead of NPM to install dependencies",
+    "yarn": ">=1.22.4 <2"
+  }
+}

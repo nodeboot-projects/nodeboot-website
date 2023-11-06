@@ -1,0 +1,10 @@
+{
+  "name": "@nodeboot-website/server",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "devDependencies": {
+    "@nodeboot-website/shared": "file:../shared",
+    "@nodeboot-website/tools": "file:../tools"
+  }
+}

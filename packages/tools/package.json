@@ -1,0 +1,6 @@
+{
+  "name": "@nodeboot-website/tools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js"
+}
