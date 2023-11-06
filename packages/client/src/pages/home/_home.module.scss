@@ -1,8 +1,61 @@
-.homeError {
+section.homeError {
+  background: tomato;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100%;
+
+  & > h1 {
+    background: white;
+  }
 }
 
-.homeLayout {
+// FIXME: This is a hack for now
+// Goal is to remove the need for this
+// Want the html structure to look like
+/* <>
+ *  <header></header> these implicitly get & > header in some way
+ *  <main></main>
+ *  <footer></footer>
+ * </>
+ */
+// But want to keep .homeLayout as a wrapper.
+// because div.root > div.homeLayout doesn't make sense semantically
+div.homeLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  min-height: 100vh;
+
+  & > header {
+    background: red;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  & > main {
+    background: green;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  & > footer {
+    background: blue;
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
-.homePage {
+section.homePage {
+  background: tomato;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100%;
+
+  & > h1 {
+    background: white;
+  }
 }

@@ -330,6 +330,13 @@ const eslintConfigObject = defineConfig({
         "max-lines": ["off"],
         "no-magic-numbers": ["off"],
         "no-multi-spaces": ["off"],
+        "no-warning-comments": [
+          "error",
+          {
+            location: "start",
+            terms: [],
+          },
+        ],
         "object-curly-newline": ["off"],
         "object-curly-spacing": ["off"],
         "one-var": ["off"],
@@ -393,8 +400,9 @@ const eslintConfigObject = defineConfig({
         "@typescript-eslint/consistent-type-imports": ["error"],
         "@typescript-eslint/explicit-function-return-type": ["off"],
         "@typescript-eslint/explicit-module-boundary-types": ["off"],
+        // FIXME: Fix conflicting rules with prettier on embedded types (props)
         "@typescript-eslint/indent": [
-          "error",
+          "off",
           2,
           {
             SwitchCase: 1,
@@ -543,6 +551,13 @@ const eslintConfigObject = defineConfig({
         "no-unused-vars": ["off"],
         "no-useless-concat": ["off"],
         "no-useless-constructor": ["error"],
+        "no-warning-comments": [
+          "error",
+          {
+            location: "start",
+            terms: [],
+          },
+        ],
         "object-curly-newline": ["off"],
         "object-curly-spacing": ["off"],
         "one-var": ["off"],
@@ -587,7 +602,7 @@ const eslintConfigObject = defineConfig({
         "react/function-component-definition": [
           "error",
           {
-            namedComponents: "function-declaration",
+            namedComponents: "arrow-function",
             unnamedComponents: "arrow-function",
           },
         ],

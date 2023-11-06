@@ -8,7 +8,8 @@
     "dev": "vite",
     "eslint": "eslint . --cache --ext ts,tsx --max-warnings 0",
     "prettier": "",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -26,6 +27,12 @@
     "@babel/eslint-parser": "^7.22.15",
     "@nodeboot-website/shared": "file:../shared",
     "@nodeboot-website/tools": "file:../tools",
+    "@tanstack/eslint-plugin-query": "^5.6.0",
+    "@testing-library/cypress": "^10.0.1",
+    "@testing-library/dom": "^9.3.3",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.35",
     "@types/react-dom": "^18.2.14",
@@ -53,6 +60,7 @@
     "eslint-plugin-testing-library": "^6.1.0",
     "eslint-plugin-unicorn": "^49.0.0",
     "eslint-plugin-vitest": "^0.3.9",
+    "jsdom": "^22.1.0",
     "prettier": "^3.0.3",
     "sass": "^1.69.5",
     "stylelint": "^15.11.0",

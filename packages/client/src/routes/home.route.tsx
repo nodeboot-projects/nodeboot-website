@@ -8,10 +8,13 @@ export const homeRoute: RouteObject = {
   children: [
     {
       element: <Page />,
-      index: true,
+      path: "/home/",
+    },
+    {
+      element: <Error />,
+      path: "/home/*",
     },
   ],
   element: <Layout />,
-  errorElement: <Error />,
-  path: "/home",
+  path: "/home/",
 };

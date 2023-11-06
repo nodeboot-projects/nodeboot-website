@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/lines-around-comment */
 /* eslint-disable sonarjs/no-duplicate-string */
 /// <reference types="vitest" />
 
@@ -42,5 +43,16 @@ export default defineConfig({
   server: {
     port: 3000,
     strictPort: true,
+  },
+  /**
+   * Do you want to do inline testing or not?
+   * (vitest extension may not pick up the test in the soure code)
+   * I have to play with it to make sure.
+   */
+  test: {
+    environment: "jsdom",
+    globals: true,
+    includeSource: ["./src/pages/home/page.tsx"],
+    // setupFiles: ["./__tests__/setup/"],
   },
 });
